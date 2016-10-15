@@ -3,27 +3,27 @@ import { IonicApp, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
-import { HomePage } from '../pages/home/home';
+import {CaissePage } from '../pages/caisse/caisse';
 import { TabsPage } from '../pages/tabs/tabs';
+
+var pages = [
+  MyApp,
+  AboutPage,
+  ContactPage,
+  CaissePage,
+  TabsPage
+]
 
 @NgModule({
   declarations: [
-    MyApp,
-    AboutPage,
-    ContactPage,
-    HomePage,
-    TabsPage
+    ...pages
   ],
   imports: [
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp,
-    AboutPage,
-    ContactPage,
-    HomePage,
-    TabsPage
+    ...pages
   ],
   providers: []
 })
