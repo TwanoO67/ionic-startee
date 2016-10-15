@@ -1,7 +1,7 @@
 {
-  "name": "ionic-hello-world",
-  "author": "Ionic Framework",
-  "homepage": "http://ionicframework.com/",
+  "name": "admin-coiffure",
+  "author": "WEBER Antoine",
+  "homepage": "http://www.weberantoine.com/",
   "private": true,
   "scripts": {
     "start": "ionic serve",
