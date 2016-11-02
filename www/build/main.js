@@ -79966,78 +79966,6 @@ setTimeout(function () {
 }, DEVICE_READY_TIMEOUT);
 
 /* ion-compiler */
-var __decorate$108 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata$3 = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var HomePage = (function () {
-    function HomePage(navCtrl) {
-        this.navCtrl = navCtrl;
-    }
-    HomePage = __decorate$108([
-        Component({
-            selector: 'page-home', template: /* ion-inline-template */ '<div>\n  <h2>Welcome to Ionic!</h2>\n  <p>\n    This starter project comes with simple tabs-based layout for apps\n    that are going to primarily use a Tabbed UI.\n  </p>\n  <p>\n    Take a look at the <code>src/pages/</code> directory to add or change tabs,\n    update any existing page or create new pages.\n  </p>\n</div>\n'
-        }), 
-        __metadata$3('design:paramtypes', [(typeof (_a = typeof NavController !== 'undefined' && NavController) === 'function' && _a) || Object])
-    ], HomePage);
-    return HomePage;
-    var _a;
-}());
-
-/* ion-compiler */
-var __decorate$110 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata$5 = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var AboutPage = (function () {
-    function AboutPage(navCtrl) {
-        this.navCtrl = navCtrl;
-    }
-    AboutPage = __decorate$110([
-        Component({
-            selector: 'page-about', template: /* ion-inline-template */ '<ion-header>\n  <ion-navbar>\n    <ion-title>\n      About\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n</ion-content>\n'
-        }), 
-        __metadata$5('design:paramtypes', [(typeof (_a = typeof NavController !== 'undefined' && NavController) === 'function' && _a) || Object])
-    ], AboutPage);
-    return AboutPage;
-    var _a;
-}());
-
-/* ion-compiler */
-var __decorate$111 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata$6 = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var ContactPage = (function () {
-    function ContactPage(navCtrl) {
-        this.navCtrl = navCtrl;
-    }
-    ContactPage = __decorate$111([
-        Component({
-            selector: 'page-contact', template: /* ion-inline-template */ '<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Contact\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-list-header>Follow us on Twitter</ion-list-header>\n    <ion-item>\n      <ion-icon name="ionic" item-left></ion-icon>\n      @ionicframework\n    </ion-item>\n  </ion-list>\n</ion-content>\n'
-        }), 
-        __metadata$6('design:paramtypes', [(typeof (_a = typeof NavController !== 'undefined' && NavController) === 'function' && _a) || Object])
-    ], ContactPage);
-    return ContactPage;
-    var _a;
-}());
-
-/* ion-compiler */
 var __decorate$107 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -80047,20 +79975,18 @@ var __decorate$107 = (undefined && undefined.__decorate) || function (decorators
 var __metadata$2 = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var TabsPage = (function () {
-    function TabsPage() {
-        // this tells the tabs component which Pages
-        // should be each tab's root Page
-        this.tab1Root = HomePage;
-        this.tab2Root = AboutPage;
-        this.tab3Root = ContactPage;
+var HomePage = (function () {
+    function HomePage(navCtrl) {
+        this.navCtrl = navCtrl;
     }
-    TabsPage = __decorate$107([
-        Component({ template: /* ion-inline-template */ '<ion-tabs>\n  <ion-tab [root]="tab1Root" tabTitle="Caisse" tabIcon="home"></ion-tab>\n  <ion-tab [root]="tab2Root" tabTitle="Clients" tabIcon="information-circle"></ion-tab>\n  <ion-tab [root]="tab3Root" tabTitle="Stock" tabIcon="contacts"></ion-tab>\n</ion-tabs>\n'
+    HomePage = __decorate$107([
+        Component({
+            selector: 'page-home', template: /* ion-inline-template */ '<div>\n  <h2>Welcome to Ionic!</h2>\n  <p>\n    This starter project comes with simple tabs-based layout for apps\n    that are going to primarily use a Tabbed UI.\n  </p>\n  <p>\n    Take a look at the <code>src/pages/</code> directory to add or change tabs,\n    update any existing page or create new pages.\n  </p>\n</div>\n'
         }), 
-        __metadata$2('design:paramtypes', [])
-    ], TabsPage);
-    return TabsPage;
+        __metadata$2('design:paramtypes', [(typeof (_a = typeof NavController !== 'undefined' && NavController) === 'function' && _a) || Object])
+    ], HomePage);
+    return HomePage;
+    var _a;
 }());
 
 /* ion-compiler */
@@ -80075,7 +80001,7 @@ var __metadata$1 = (undefined && undefined.__metadata) || function (k, v) {
 };
 var MyApp = (function () {
     function MyApp(platform) {
-        this.rootPage = TabsPage;
+        this.rootPage = HomePage;
         platform.ready().then(function () {
             // Okay, so the platform is ready and our plugins are available.
             // Here you can do any higher level native things you might need.
@@ -80083,7 +80009,7 @@ var MyApp = (function () {
         });
     }
     MyApp = __decorate$1([
-        Component({ template: /* ion-inline-template */ '<ion-nav [root]="rootPage"></ion-nav>\n'
+        Component({ template: /* ion-inline-template */ '\n  <!-- Main Header -->\n  <header class="main-header">\n\n    <!-- Logo -->\n    <a href="index2.html" class="logo">\n      <!-- mini logo for sidebar mini 50x50 pixels -->\n      <span class="logo-mini"><b>A</b>LT</span>\n      <!-- logo for regular state and mobile devices -->\n      <span class="logo-lg"><b>Admin</b>LTE</span>\n    </a>\n\n    <!-- Header Navbar -->\n    <nav class="navbar navbar-static-top" role="navigation">\n      <!-- Sidebar toggle button-->\n      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">\n        <span class="sr-only">Toggle navigation</span>\n      </a>\n      <!-- Navbar Right Menu -->\n      <div class="navbar-custom-menu">\n        <ul class="nav navbar-nav">\n          <!-- Messages: style can be found in dropdown.less-->\n          <li class="dropdown messages-menu">\n            <!-- Menu toggle button -->\n            <a href="#" class="dropdown-toggle" data-toggle="dropdown">\n              <i class="fa fa-envelope-o"></i>\n              <span class="label label-success">4</span>\n            </a>\n            <ul class="dropdown-menu">\n              <li class="header">You have 4 messages</li>\n              <li>\n                <!-- inner menu: contains the messages -->\n                <ul class="menu">\n                  <li><!-- start message -->\n                    <a href="#">\n                      <div class="pull-left">\n                        <!-- User Image -->\n                        <img src="assets/lib/adminlte/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">\n                      </div>\n                      <!-- Message title and timestamp -->\n                      <h4>\n                        Support Team\n                        <small><i class="fa fa-clock-o"></i> 5 mins</small>\n                      </h4>\n                      <!-- The message -->\n                      <p>Why not buy a new awesome theme?</p>\n                    </a>\n                  </li>\n                  <!-- end message -->\n                </ul>\n                <!-- /.menu -->\n              </li>\n              <li class="footer"><a href="#">See All Messages</a></li>\n            </ul>\n          </li>\n          <!-- /.messages-menu -->\n\n          <!-- Notifications Menu -->\n          <li class="dropdown notifications-menu">\n            <!-- Menu toggle button -->\n            <a href="#" class="dropdown-toggle" data-toggle="dropdown">\n              <i class="fa fa-bell-o"></i>\n              <span class="label label-warning">10</span>\n            </a>\n            <ul class="dropdown-menu">\n              <li class="header">You have 10 notifications</li>\n              <li>\n                <!-- Inner Menu: contains the notifications -->\n                <ul class="menu">\n                  <li><!-- start notification -->\n                    <a href="#">\n                      <i class="fa fa-users text-aqua"></i> 5 new members joined today\n                    </a>\n                  </li>\n                  <!-- end notification -->\n                </ul>\n              </li>\n              <li class="footer"><a href="#">View all</a></li>\n            </ul>\n          </li>\n          <!-- Tasks Menu -->\n          <li class="dropdown tasks-menu">\n            <!-- Menu Toggle Button -->\n            <a href="#" class="dropdown-toggle" data-toggle="dropdown">\n              <i class="fa fa-flag-o"></i>\n              <span class="label label-danger">9</span>\n            </a>\n            <ul class="dropdown-menu">\n              <li class="header">You have 9 tasks</li>\n              <li>\n                <!-- Inner menu: contains the tasks -->\n                <ul class="menu">\n                  <li><!-- Task item -->\n                    <a href="#">\n                      <!-- Task title and progress text -->\n                      <h3>\n                        Design some buttons\n                        <small class="pull-right">20%</small>\n                      </h3>\n                      <!-- The progress bar -->\n                      <div class="progress xs">\n                        <!-- Change the css width attribute to simulate progress -->\n                        <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">\n                          <span class="sr-only">20% Complete</span>\n                        </div>\n                      </div>\n                    </a>\n                  </li>\n                  <!-- end task item -->\n                </ul>\n              </li>\n              <li class="footer">\n                <a href="#">View all tasks</a>\n              </li>\n            </ul>\n          </li>\n          <!-- User Account Menu -->\n          <li class="dropdown user user-menu">\n            <!-- Menu Toggle Button -->\n            <a href="#" class="dropdown-toggle" data-toggle="dropdown">\n              <!-- The user image in the navbar-->\n              <img src="assets/lib/adminlte/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">\n              <!-- hidden-xs hides the username on small devices so only the image appears. -->\n              <span class="hidden-xs">Alexander Pierce</span>\n            </a>\n            <ul class="dropdown-menu">\n              <!-- The user image in the menu -->\n              <li class="user-header">\n                <img src="assets/lib/adminlte/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">\n\n                <p>\n                  Alexander Pierce - Web Developer\n                  <small>Member since Nov. 2012</small>\n                </p>\n              </li>\n              <!-- Menu Body -->\n              <li class="user-body">\n                <div class="row">\n                  <div class="col-xs-4 text-center">\n                    <a href="#">Followers</a>\n                  </div>\n                  <div class="col-xs-4 text-center">\n                    <a href="#">Sales</a>\n                  </div>\n                  <div class="col-xs-4 text-center">\n                    <a href="#">Friends</a>\n                  </div>\n                </div>\n                <!-- /.row -->\n              </li>\n              <!-- Menu Footer-->\n              <li class="user-footer">\n                <div class="pull-left">\n                  <a href="#" class="btn btn-default btn-flat">Profile</a>\n                </div>\n                <div class="pull-right">\n                  <a href="#" class="btn btn-default btn-flat">Sign out</a>\n                </div>\n              </li>\n            </ul>\n          </li>\n          <!-- Control Sidebar Toggle Button -->\n          <li>\n            <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>\n          </li>\n        </ul>\n      </div>\n    </nav>\n  </header>\n  <!-- Left side column. contains the logo and sidebar -->\n  <aside class="main-sidebar">\n\n    <!-- sidebar: style can be found in sidebar.less -->\n    <section class="sidebar">\n\n      <!-- Sidebar user panel (optional) -->\n      <div class="user-panel">\n        <div class="pull-left image">\n          <img src="assets/lib/adminlte/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">\n        </div>\n        <div class="pull-left info">\n          <p>Alexander Pierce</p>\n          <!-- Status -->\n          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>\n        </div>\n      </div>\n\n      <!-- search form (Optional) -->\n      <form action="#" method="get" class="sidebar-form">\n        <div class="input-group">\n          <input type="text" name="q" class="form-control" placeholder="Search...">\n              <span class="input-group-btn">\n                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>\n                </button>\n              </span>\n        </div>\n      </form>\n      <!-- /.search form -->\n\n      <!-- Sidebar Menu -->\n      <ul class="sidebar-menu">\n        <li class="header">HEADER</li>\n        <!-- Optionally, you can add icons to the links -->\n        <li class="active"><a href="#"><i class="fa fa-link"></i> <span>Link</span></a></li>\n        <li><a href="#"><i class="fa fa-link"></i> <span>Another Link</span></a></li>\n        <li class="treeview">\n          <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span>\n            <span class="pull-right-container">\n              <i class="fa fa-angle-left pull-right"></i>\n            </span>\n          </a>\n          <ul class="treeview-menu">\n            <li><a href="#">Link in level 2</a></li>\n            <li><a href="#">Link in level 2</a></li>\n          </ul>\n        </li>\n      </ul>\n      <!-- /.sidebar-menu -->\n    </section>\n    <!-- /.sidebar -->\n  </aside>\n\n  <!-- Content Wrapper. Contains page content -->\n  <div class="content-wrapper">\n    <!-- Content Header (Page header) -->\n    <section class="content-header">\n      <h1>\n        Page Header\n        <small>Optional description</small>\n      </h1>\n      <ol class="breadcrumb">\n        <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>\n        <li class="active">Here</li>\n      </ol>\n    </section>\n\n    <!-- Main content -->\n    <section class="content">\n\n      <!-- Your Page Content Here -->\n      <!-- Ionic\'s root component and where the app will load -->\n\n      <ion-nav [root]="rootPage"></ion-nav>\n\n    </section>\n    <!-- /.content -->\n  </div>\n  <!-- /.content-wrapper -->\n'
         }), 
         __metadata$1('design:paramtypes', [(typeof (_a = typeof Platform !== 'undefined' && Platform) === 'function' && _a) || Object])
     ], MyApp);
@@ -80092,24 +80018,72 @@ var MyApp = (function () {
 }());
 
 /* ion-compiler */
-var __decorate$112 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+var __decorate$109 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata$7 = (undefined && undefined.__metadata) || function (k, v) {
+var __metadata$4 = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var AboutPage = (function () {
+    function AboutPage(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    AboutPage = __decorate$109([
+        Component({
+            selector: 'page-about', template: /* ion-inline-template */ '<ion-header>\n  <ion-navbar>\n    <ion-title>\n      About\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n</ion-content>\n'
+        }), 
+        __metadata$4('design:paramtypes', [(typeof (_a = typeof NavController !== 'undefined' && NavController) === 'function' && _a) || Object])
+    ], AboutPage);
+    return AboutPage;
+    var _a;
+}());
+
+/* ion-compiler */
+var __decorate$110 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata$5 = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var ContactPage = (function () {
+    function ContactPage(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    ContactPage = __decorate$110([
+        Component({
+            selector: 'page-contact', template: /* ion-inline-template */ '<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Contact\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-list-header>Follow us on Twitter</ion-list-header>\n    <ion-item>\n      <ion-icon name="ionic" item-left></ion-icon>\n      @ionicframework\n    </ion-item>\n  </ion-list>\n</ion-content>\n'
+        }), 
+        __metadata$5('design:paramtypes', [(typeof (_a = typeof NavController !== 'undefined' && NavController) === 'function' && _a) || Object])
+    ], ContactPage);
+    return ContactPage;
+    var _a;
+}());
+
+/* ion-compiler */
+var __decorate$111 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata$6 = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var CaissePage = (function () {
     function CaissePage(navCtrl) {
         this.navCtrl = navCtrl;
     }
-    CaissePage = __decorate$112([
+    CaissePage = __decorate$111([
         Component({
             selector: 'page-caisse', template: /* ion-inline-template */ '<ion-header>\n  <ion-navbar>\n    <ion-title>Nouvel Encaissement</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  Client: <input type="text" name="client" />\n  <div>\n    Prestations:\n    <ul>\n      <li>\n        Coupe Homme\n      </li>\n      <li>\n        Coupe Femme\n      </li>\n    </ul>\n  </div>\n\n  <div>\n    Produits:\n    <ul>\n      <li>\n        Shampoing\n      </li>\n      <li>\n        Gel\n      </li>\n    </ul>\n  </div>\n\n  <h2>Welcome to Ionic!</h2>\n  <p>\n    This starter project comes with simple tabs-based layout for apps\n    that are going to primarily use a Tabbed UI.\n  </p>\n  <p>\n    Take a look at the <code>src/pages/</code> directory to add or change tabs,\n    update any existing page or create new pages.\n  </p>\n</ion-content>\n'
         }), 
-        __metadata$7('design:paramtypes', [(typeof (_a = typeof NavController !== 'undefined' && NavController) === 'function' && _a) || Object])
+        __metadata$6('design:paramtypes', [(typeof (_a = typeof NavController !== 'undefined' && NavController) === 'function' && _a) || Object])
     ], CaissePage);
     return CaissePage;
     var _a;
@@ -80130,8 +80104,7 @@ var pages = [
     AboutPage,
     ContactPage,
     HomePage,
-    CaissePage,
-    TabsPage
+    CaissePage
 ];
 var AppModule = (function () {
     function AppModule() {

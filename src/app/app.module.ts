@@ -5,15 +5,13 @@ import { HomePage } from '../pages/home/home';
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { CaissePage } from '../pages/caisse/caisse';
-import { TabsPage } from '../pages/tabs/tabs';
 
 var pages = [
   MyApp,
   AboutPage,
   ContactPage,
   HomePage,
-  CaissePage,
-  TabsPage
+  CaissePage
 ]
 
 @NgModule({
