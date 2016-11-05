@@ -12,11 +12,18 @@ var pages = [
   ContactPage,
   HomePage,
   CaissePage
-]
+];
+
+import {SidebarMenu} from "./widgets/sidebar-menu";
+
+var widgets = [
+  SidebarMenu
+];
 
 @NgModule({
   declarations: [
-    ...pages
+    ...pages,
+    ...widgets
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -24,7 +31,6 @@ var pages = [
   bootstrap: [IonicApp],
   entryComponents: [
     ...pages
-  ],
-  providers: []
+  ]
 })
 export class AppModule {}

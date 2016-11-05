@@ -4,7 +4,7 @@
   "homepage": "http://www.weberantoine.com/",
   "private": true,
   "scripts": {
-    "start": "ionic serve",
+    "start": "ionic serve --all --nobrowser",
     "build": "ionic-app-scripts build",
     "watch": "ionic-app-scripts watch",
     "serve:before": "watch",
