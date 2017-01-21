@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router, NavigatedRoute } from "@angular/router";
+import { Router } from "@angular/router";
 
 @Component({
   selector: "sidebar-menu",
@@ -30,15 +30,14 @@ import { Router, NavigatedRoute } from "@angular/router";
 })
 export class SidebarMenu {
   private links:any = null;
-  private _nav = {
+  /*private _nav = {
     isActive: function(page){
       return true;
     }
-  }
+  }*/
 
   constructor(
-    private _router: Router,
-    //private _nav: NavigatedRoute
+    private _router: Router
   ){
     this.links = [
       {
