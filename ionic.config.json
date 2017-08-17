@@ -1,6 +1,8 @@
 {
-  "name": "C-Coiffure",
-  "app_id": "c-coif",
-  "v2": true,
-  "typescript": true
+  "name": "ionic3-angular4",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
 }
